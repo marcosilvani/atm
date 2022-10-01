@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+!*.log/
 
 # BlueJ files
 *.ctxt
@@ -21,3 +22,52 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Openj9 cache
+.scc/
+**/.scc/
+
+# Test log file
+stdlist
+
+# Eclipse specific IDE
+.classpath
+.project
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+.settings/
+bin/
+/.metadata/
+
+# Intellij specific IDE
+.idea/
+*.iml
+*.iws
+
+# NetBeans specific IDE
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Visual Code specific IDE
+.vscode/
+
+# traces & dump
+Snap.*.trc
+core.*.dmp
+heapdump.*.phd
+javacore.*
+jitdump.*.dmp
+
+# Maven
+target/
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.tag
