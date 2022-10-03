@@ -29,4 +29,16 @@ public class AccountFunctionsTest {
 					.body(is("Account Functions - create()"));
 	}
 
+	@Test
+	public void testInitializeEndpoint() {
+		given()
+				.when()
+				.put("/atm/api/initialize")
+				.then()
+				.statusCode(200)
+				.body(is("ATM Initialized with €1500" +
+						"\nAccounts Created:\n" +
+						"123456789, 987654321"));
+	}
+
 }
